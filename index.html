@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba Einstein Bot</title>
+    <title>Prueba de Chatbot Einstein</title>
 </head>
 <body>
     <h1>Prueba de Chatbot Einstein</h1>
 
-    <!-- Código del chatbot de Einstein -->
-    <script>
+    <!-- Código del chatbot de Salesforce -->
+    <script type="text/javascript">
         function initEmbeddedMessaging() {
             try {
                 embeddedservice_bootstrap.settings.language = 'es'; // Configurar idioma
-
+                
                 embeddedservice_bootstrap.init(
-                    '00DEc000000GWgf',  // ID de la organización
-                    'Rapsodia_Argentina_Staging_Web',  // Nombre de la implementación
-                    'https://rapsodia--devaxxon.sandbox.my.site.com/ESWRapsodiaArgentinaSta1741269518348', // URL base
+                    '00DEc000000GWgf',
+                    'Chatbot_GitHub_Pages',
+                    'https://rapsodia--devaxxon.sandbox.my.site.com/ESWChatbotGitHubPages1741629339522',
                     {
                         scrt2URL: 'https://rapsodia--devaxxon.sandbox.my.salesforce-scrt.com'
                     }
                 );
             } catch (err) {
-                console.error('Error loading Embedded Messaging:', err);
+                console.error('Error loading Embedded Messaging: ', err);
             }
-        }
+        };
     </script>
 
-    <!-- Carga del script del chatbot de Salesforce -->
-    <script 
-        type="text/javascript" 
-        src="https://rapsodia--devaxxon.sandbox.my.site.com/ESWRapsodiaArgentinaSta1741269518348/assets/js/bootstrap.min.js"
+    <!-- Cargar script de Salesforce Embedded Messaging -->
+    <script type="text/javascript" 
+        src="https://rapsodia--devaxxon.sandbox.my.site.com/ESWChatbotGitHubPages1741629339522/assets/js/bootstrap.min.js" 
         onload="initEmbeddedMessaging()">
     </script>
 </body>
